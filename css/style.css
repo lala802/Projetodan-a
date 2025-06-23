@@ -1,8 +1,12 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +23,7 @@ body {
   margin: auto;
 }
 
-/* Tela de boas-vindas */
+/* Welcome Screen */
 .welcome-screen {
   background-color: #FFD300;
   color: #000;
@@ -28,10 +32,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.welcome-container {
-  max-width: 600px;
 }
 
 .welcome-container h1 {
@@ -284,4 +284,16 @@ footer {
   text-align: center;
   padding: 25px 0;
   font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

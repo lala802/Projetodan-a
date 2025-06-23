@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +12,53 @@ body {
   line-height: 1.6;
 }
 
+/* Containers */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+}
+
+/* Tela de boas-vindas */
+.welcome-screen {
+  background-color: #FFD300;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-container {
+  max-width: 600px;
+}
+
+.welcome-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.welcome-container .btn {
+  padding: 12px 28px;
+  background-color: #000;
+  color: #FFD300;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+
+.welcome-container .btn:hover {
+  background-color: #FFD300;
+  color: #000;
 }
 
 /* Header */

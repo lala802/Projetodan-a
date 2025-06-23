@@ -21,7 +21,8 @@ body {
 header {
   background: #fff;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 header .container {
@@ -32,20 +33,21 @@ header .container {
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -54,58 +56,63 @@ nav ul li a:hover {
 
 /* Hero */
 .hero {
-  background: #f8f8f8;
-  padding: 60px 0;
+  background: #fdfdfd;
+  padding: 80px 0;
 }
 
 .hero .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .hero-text h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
 }
 
 .hero-text p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
 }
 
 .buttons {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 12px 28px;
   border: 2px solid #000;
   text-decoration: none;
   color: #000;
+  font-weight: 600;
+  border-radius: 50px;
   transition: 0.3s;
 }
 
 .btn:hover {
   background: #000;
-  color: #fff;
+  color: #FFD300;
 }
 
 .btn.yellow {
   background: #FFD300;
-  border: none;
+  border: 2px solid #FFD300;
 }
 
 .btn.yellow:hover {
   background: #e6be00;
+  color: #000;
 }
 
 /* Destaques */
 .destaques {
   background: #fff;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .destaques .container {
@@ -115,23 +122,39 @@ nav ul li a:hover {
 }
 
 .card {
-  background: #f8f8f8;
+  background: #fdfdfd;
+  border-radius: 16px;
   padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .card img {
   width: 100%;
-  margin-bottom: 10px;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
 .categoria {
   color: #888;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 
 .card h3 {
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #444;
+  font-size: 1rem;
 }
 
 .destaque-amarelo {
@@ -140,23 +163,39 @@ nav ul li a:hover {
 
 /* Vídeos */
 .videos {
-  padding: 60px 0;
+  padding: 70px 0;
+}
+
+.videos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
 .video-item img {
   width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
 }
 
 /* Notícias */
 .noticias {
   background: #fff;
-  padding: 60px 0;
+  padding: 70px 0;
+}
+
+.noticias h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .noticias-grid {
@@ -165,8 +204,23 @@ nav ul li a:hover {
   gap: 30px;
 }
 
+.noticia {
+  background: #fdfdfd;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.noticia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
 .noticia img {
   width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 .noticia span {
@@ -176,6 +230,7 @@ nav ul li a:hover {
 
 .noticia h3 {
   margin-top: 10px;
+  font-size: 1.3rem;
 }
 
 /* Footer */
@@ -183,5 +238,6 @@ footer {
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
+  font-size: 0.9rem;
 }

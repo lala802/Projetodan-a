@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dança Viva</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Portal de dança: espetáculos, cursos e novidades sobre dança contemporânea.">
 </head>
 
 <body>
 
   <!-- Tela de Boas-Vindas -->
-  <div class="welcome-screen">
+  <section class="welcome-screen">
     <div class="welcome-container">
       <h1>Dança Viva</h1>
-      <p>Bem-vindo(a) ao nosso portal de dança.<br>Entre para conhecer espetáculos, cursos e novidades.</p>
+      <p>Bem-vindo(a) ao nosso portal de dança. Conheça espetáculos, cursos e novidades.</p>
       <a href="#home" class="btn">Entrar no site</a>
     </div>
-  </div>
+  </section>
 
   <!-- Header -->
   <header id="home">
     <div class="container">
       <div class="logo">Dança Viva</div>
-      <nav>
+      <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#home">Início</a></li>
           <li><a href="#programacao">Programação</a></li>
@@ -36,86 +38,88 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-text">
-        <h1>Dançar é contar histórias com o corpo</h1>
-        <p>Espetáculos, cursos e notícias sobre a cena da dança contemporânea.</p>
-        <div class="buttons">
-          <a href="#programacao" class="btn yellow">Veja nossa programação</a>
-          <a href="#newsletter" class="btn">Assine nossa newsletter</a>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Dançar é contar histórias com o corpo</h1>
+          <p>Espetáculos, cursos e notícias sobre a cena da dança contemporânea.</p>
+          <div class="buttons">
+            <a href="#programacao" class="btn yellow">Veja nossa programação</a>
+            <a href="#newsletter" class="btn">Assine nossa newsletter</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/500x500" alt="Bailarina dançando">
         </div>
       </div>
-      <div class="hero-image">
-        <img src="https://via.placeholder.com/500x500" alt="Bailarina">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Destaques -->
-  <section class="destaques" id="espetaculos">
-    <div class="container">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="">
-        <span class="categoria">Espetáculo</span>
-        <h3>Corpo em Movimento</h3>
-        <p>Uma imersão na dança contemporânea brasileira.</p>
+    <!-- Destaques -->
+    <section class="destaques" id="espetaculos">
+      <div class="container">
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Espetáculo Corpo em Movimento">
+          <span class="categoria">Espetáculo</span>
+          <h3>Corpo em Movimento</h3>
+          <p>Uma imersão na dança contemporânea brasileira.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Entrevista com bailarinos">
+          <span class="categoria">Entrevista</span>
+          <h3>Bailarinos além do palco</h3>
+          <p>Conversas sobre criação e resistência.</p>
+        </article>
+        <article class="card destaque-amarelo">
+          <img src="https://via.placeholder.com/300x200/FFD300/000000" alt="Festival de dança no Brasil">
+          <span class="categoria">Notícia</span>
+          <h3>Festivais de dança no Brasil</h3>
+          <p>Eventos imperdíveis para 2024.</p>
+        </article>
       </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="">
-        <span class="categoria">Entrevista</span>
-        <h3>Bailarinos além do palco</h3>
-        <p>Conversas sobre criação e resistência.</p>
-      </div>
-      <div class="card destaque-amarelo">
-        <img src="https://via.placeholder.com/300x200/FFD300/000000" alt="">
-        <span class="categoria">Notícia</span>
-        <h3>Festivais de dança no Brasil</h3>
-        <p>Eventos imperdíveis para 2024.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Vídeos -->
-  <section class="videos">
-    <div class="container">
-      <h2>Vídeos</h2>
-      <div class="video-grid">
-        <div class="video-item"><img src="https://via.placeholder.com/300x200" alt=""></div>
-        <div class="video-item"><img src="https://via.placeholder.com/300x200" alt=""></div>
-        <div class="video-item destaque-amarelo"><img src="https://via.placeholder.com/300x200/FFD300/000000" alt=""></div>
-        <div class="video-item"><img src="https://via.placeholder.com/300x200" alt=""></div>
+    <!-- Vídeos -->
+    <section class="videos">
+      <div class="container">
+        <h2>Vídeos</h2>
+        <div class="video-grid">
+          <div class="video-item"><img src="https://via.placeholder.com/300x200" alt="Vídeo de apresentação 1" loading="lazy"></div>
+          <div class="video-item"><img src="https://via.placeholder.com/300x200" alt="Vídeo de apresentação 2" loading="lazy"></div>
+          <div class="video-item destaque-amarelo"><img src="https://via.placeholder.com/300x200/FFD300/000000" alt="Vídeo em destaque" loading="lazy"></div>
+          <div class="video-item"><img src="https://via.placeholder.com/300x200" alt="Vídeo de apresentação 3" loading="lazy"></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Notícias -->
-  <section class="noticias" id="noticias">
-    <div class="container">
-      <h2>Matérias e Notícias</h2>
-      <div class="noticias-grid">
-        <div class="noticia">
-          <img src="https://via.placeholder.com/300x200" alt="">
-          <span>22 de Abril de 2024</span>
-          <h3>A expressividade da dança contemporânea</h3>
-        </div>
-        <div class="noticia destaque-amarelo">
-          <img src="https://via.placeholder.com/300x200/FFD300/000000" alt="">
-          <span>19 de Abril de 2024</span>
-          <h3>Workshop explora novas técnicas corporais</h3>
-        </div>
-        <div class="noticia">
-          <img src="https://via.placeholder.com/300x200" alt="">
-          <span>17 de Abril de 2024</span>
-          <h3>O cenário atual da dança brasileira</h3>
+    <!-- Notícias -->
+    <section class="noticias" id="noticias">
+      <div class="container">
+        <h2>Matérias e Notícias</h2>
+        <div class="noticias-grid">
+          <article class="noticia">
+            <img src="https://via.placeholder.com/300x200" alt="Expressividade da dança" loading="lazy">
+            <span>22 de Abril de 2024</span>
+            <h3>A expressividade da dança contemporânea</h3>
+          </article>
+          <article class="noticia destaque-amarelo">
+            <img src="https://via.placeholder.com/300x200/FFD300/000000" alt="Workshop sobre técnicas corporais" loading="lazy">
+            <span>19 de Abril de 2024</span>
+            <h3>Workshop explora novas técnicas corporais</h3>
+          </article>
+          <article class="noticia">
+            <img src="https://via.placeholder.com/300x200" alt="Cenário da dança no Brasil" loading="lazy">
+            <span>17 de Abril de 2024</span>
+            <h3>O cenário atual da dança brasileira</h3>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
+  <footer id="contato">
     <div class="container">
       <p>&copy; 2025 Dança Viva - Todos os direitos reservados.</p>
     </div>

@@ -2,10 +2,60 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=html/index.html">
-  <title>Redirecionando...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal - Dança Viva</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #FFD300;
+      color: #000;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 12px 28px;
+      background-color: #000;
+      color: #FFD300;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      border: 2px solid #000;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #FFD300;
+      color: #000;
+      border: 2px solid #000;
+    }
+  </style>
 </head>
 <body>
-  <p>Se não for redirecionado automaticamente, <a href="html/index.html">clique aqui</a>.</p>
+
+  <div class="container">
+    <h1>Dança Viva</h1>
+    <p>Bem-vindo(a) ao nosso portal de dança.<br>Entre para conhecer espetáculos, cursos e novidades.</p>
+    <a href="html/index.html" class="btn">Entrar no site</a>
+  </div>
+
 </body>
 </html>
